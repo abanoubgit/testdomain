@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Amsi</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid topbar bg-light px-5 d-none d-lg-block">
+        <div class="row gx-0 align-items-center">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-flex flex-wrap">
+                    <a href="#" class="text-muted small me-4"><i
+                            class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+                    <a href="tel:+30 6944 180 345" class="text-muted small me-4"><i
+                            class="fas fa-phone-alt text-primary me-2"></i>+30 6944 180 345</a>
+                    <a href="mailto:info@amsi.gr" class="text-muted small me-0"><i
+                            class="fas fa-envelope text-primary me-2"></i>info@amsi.gr</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0 ">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+
+                <img src="img/logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                            <span class="dropdown-toggle">Aviation</span>
+                        </a>
+                        <div class="dropdown-menu m-0">
+                            <a href="trainings.html" class="dropdown-item">Aviation Trainings</a>
+                            <a href="services.html" class="dropdown-item">Aviation Services</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                            <span class="dropdown-toggle">Maritime</span>
+                        </a>
+                        <div class="dropdown-menu m-0">
+                            <a href="trainings.html" class="dropdown-item">Maritime Trainings</a>
+                            <a href="services.html" class="dropdown-item">Maritime Services</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                            <span class="dropdown-toggle">Land Transport</span>
+                        </a>
+                        <div class="dropdown-menu m-0">
+                            <a href="trainings.html" class="dropdown-item">Land Transport Trainings</a>
+                            <a href="services.html" class="dropdown-item">Land Transport Services</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                            <span class="dropdown-toggle">Armed Forces</span>
+                        </a>
+                        <div class="dropdown-menu m-0">
+                            <a href="trainings.html" class="dropdown-item">Armed Forces Trainings</a>
+                            <a href="services.html" class="dropdown-item">Armed Forces Services</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                            <span class="dropdown-toggle">Industry</span>
+                        </a>
+                        <div class="dropdown-menu m-0">
+                            <a href="trainings.html" class="dropdown-item">Industry Trainings</a>
+                            <a href="services.html" class="dropdown-item">Industry Services</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="contact.html" class="btn btn-primary rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0">Contact
+                    Us</a>
+            </div>
+        </nav>
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">
+                    Aviation Trainings
+                </h4>
+                <h5 class="text-white wow fadeInDown" data-wow-delay="0.3s">
+                    Your safety is our mission. Stay vigilant, stay safe
+                </h5>
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+
+
+
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+
+
+
+
+    <!-- Shop Start -->
+    <div class="container-fluid">
+        <div class="row ">
+            <!-- Shop Sidebar Start -->
+            <div class="col-lg-3 col-md-4">
+
+
+
+                <!-- Size Start -->
+                <div class="bg-light p-4 mb-30">
+                    <form>
+                        <!-- Aviation Trainings Widget -->
+                        <div class="card mb-4">
+                            <div class="card-header text-center">
+                                <h3 class="card-title"> Aviation Trainings</h3>
+                            </div>
+                            <div class="card-body ">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item category-item bg-breadcrumb" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/AF.CAT.1.jpg'); 
+                    background-size: cover; 
+                    background-position: center; 
+                    margin-bottom: 15px; 
+                    border-radius: 15px;">
+                                        <a href="#!" class="text-decoration-none d-flex align-items-center">
+                                            <span class="w-100 text-center text-white">Investigations</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item category-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.449), rgba(0, 0, 0,0.449)), url('img/AF.CAT.4.jpg'); 
+                    background-size: cover; 
+                    background-position: center; 
+                    margin-bottom: 15px; 
+                    border-radius: 15px;">
+                                        <a href="#!" class="text-decoration-none d-flex align-items-center">
+                                            <span class="w-100 text-center text-white">Cabin Crew Training</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item category-item"
+                                        style="background-image: url('img/AF.CAT.2.jpg'); background-size: cover; background-position: center; margin-bottom: 15px; border-radius: 15px;">
+                                        <a href="#!" class="text-decoration-none d-flex align-items-center">
+                                            <span class="w-100 text-center text-white">Human Factors</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item category-item"
+                                        style="background-image: url('img/AF.CAT.4.jpg'); background-size: cover; background-position: center; margin-bottom: 15px; border-radius: 15px;">
+                                        <a href="#!" class="text-decoration-none d-flex align-items-center">
+                                            <span class="w-100 text-center text-white">Cabin Crew Training</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item category-item"
+                                        style="background-image: url('img/AF.CAT.3\ \(free\).jpg'); background-size: cover; background-position: center; margin-bottom: 15px; border-radius: 15px;">
+                                        <a href="#!" class="text-decoration-none d-flex align-items-center">
+                                            <span class="w-100 text-center text-white">SMS & Risk Management</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-group-item category-item"
+                                        style="background-image: url('img/AF.CAT.1.jpg'); background-size: cover; background-position: center; margin-bottom: 15px; border-radius: 15px;">
+                                        <a href="#!" class="text-decoration-none d-flex align-items-center">
+                                            <span class="w-100 text-center text-white">Investigations</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item category-item"
+                                        style="background-image: url('img/AF.CAT.4.jpg'); background-size: cover; background-position: center; margin-bottom: 15px; border-radius: 15px;">
+                                        <a href="#!" class="text-decoration-none d-flex align-items-center">
+                                            <span class="w-100 text-center text-white">Cabin Crew Training</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item category-item"
+                                        style="background-image: url('img/AF.CAT.2.jpg'); background-size: cover; background-position: center; margin-bottom: 15px; border-radius: 15px;">
+                                        <a href="#!" class="text-decoration-none d-flex align-items-center">
+                                            <span class="w-100 text-center text-white">Human Factors</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item category-item"
+                                        style="background-image: url('img/AF.CAT.4.jpg'); background-size: cover; background-position: center; margin-bottom: 15px; border-radius: 15px;">
+                                        <a href="#!" class="text-decoration-none d-flex align-items-center">
+                                            <span class="w-100 text-center text-white">Cabin Crew Training</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item category-item"
+                                        style="background-image: url('img/AF.CAT.3\ \(free\).jpg'); background-size: cover; background-position: center; margin-bottom: 15px; border-radius: 15px;">
+                                        <a href="#!" class="text-decoration-none d-flex align-items-center">
+                                            <span class="w-100 text-center text-white">SMS & Risk Management</span>
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Custom CSS for hover effect -->
+                        <style>
+                            .category-item {
+                                font-weight: bold;
+                                height: 120px;
+                                position: relative;
+                                color: white;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+                                overflow: hidden;
+
+
+
+
+
+                            }
+
+                            .category-item:hover {
+                                background-color: rgba(35, 67, 131, 0.8);
+                                color: white;
+                                text-decoration: none;
+                                transform: scale(1.05);
+                                transition: transform 0.3s, background-color 0.3s;
+                            }
+
+                            .list-group-item {
+                                padding: 10px;
+                                border: none;
+                                transition: transform 0.3s, box-shadow 0.3s;
+                            }
+
+                            .list-group-item:hover {
+                                box-shadow: 0 6px 12px rgba(169, 19, 19, 0.15);
+                            }
+                        </style>
+                    </form>
+                </div>
+                <!-- Size End -->
+
+
+
+
+
+            </div>
+            <!-- Shop Sidebar End -->
+
+
+
+
+            <!-- Shop Product Start -->
+            <div class="col-lg-9 col-md-8">
+                <div class="row pb-3">
+                    <!-- Product Item Start -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <!-- Product Image -->
+                            <div class="product-img position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/amsiabout.png" alt="Product Image">
+
+                                <!-- Blinking Text (Static Button) -->
+                                <div class="blinking-button">
+                                    <span class="blinking-text">2025</span>
+                                </div>
+
+                                <!-- Overlay with View Details Button -->
+                                <div
+                                    class="d-flex justify-content-center align-items-center h-100 w-100 product-overlay">
+                                    <a href="course.html" class="btn btn-outline-dark">View Details</a>
+                                </div>
+                            </div>
+                            <!-- Title Below Image -->
+                            <div class="product-title-below">
+                                <h5>Cabin Crew Training Cabin Crew Training</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Item End -->
+
+
+                    <!-- Product Item Start -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <!-- Product Image -->
+                            <div class="product-img position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/amsiabout.png" alt="Product Image">
+
+                                <!-- Blinking Text (Static Button) -->
+                                <div class="blinking-button">
+                                    <span class="blinking-text">2025</span>
+                                </div>
+
+                                <!-- Overlay with View Details Button -->
+                                <div
+                                    class="d-flex justify-content-center align-items-center h-100 w-100 product-overlay">
+                                    <a href="course.html" class="btn btn-outline-dark">View Details</a>
+
+                                </div>
+                            </div>
+                            <!-- Title Below Image -->
+                            <div class="product-title-below">
+                                <h5>Cabin Crew Training Cabin Crew Training</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Item End --> <!-- Product Item Start -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <!-- Product Image -->
+                            <div class="product-img position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/amsiabout.png" alt="Product Image">
+
+                                <!-- Blinking Text (Static Button) -->
+                                <div class="blinking-button">
+                                    <span class="blinking-text">2025</span>
+                                </div>
+
+                                <!-- Overlay with View Details Button -->
+                                <div
+                                    class="d-flex justify-content-center align-items-center h-100 w-100 product-overlay">
+                                    <a href="course.html" class="btn btn-outline-dark">View Details</a>
+                                </div>
+                            </div>
+                            <!-- Title Below Image -->
+                            <div class="product-title-below">
+                                <h5>Cabin Crew </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Item End --> <!-- Product Item Start -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <!-- Product Image -->
+                            <div class="product-img position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/amsiabout.png" alt="Product Image">
+
+                                <!-- Blinking Text (Static Button) -->
+                                <div class="blinking-button">
+                                    <span class="blinking-text">2025</span>
+                                </div>
+
+                                <!-- Overlay with View Details Button -->
+                                <div
+                                    class="d-flex justify-content-center align-items-center h-100 w-100 product-overlay">
+                                    <a href="course.html" class="btn btn-outline-dark">View Details</a>
+                                </div>
+                            </div>
+                            <!-- Title Below Image -->
+                            <div class="product-title-below">
+                                <h5>Cabin Crew Training</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Item End --> <!-- Product Item Start -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <!-- Product Image -->
+                            <div class="product-img position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/amsiabout.png" alt="Product Image">
+
+                                <!-- Blinking Text (Static Button) -->
+                                <div class="blinking-button">
+                                    <span class="blinking-text">2025</span>
+                                </div>
+
+                                <!-- Overlay with View Details Button -->
+                                <div
+                                    class="d-flex justify-content-center align-items-center h-100 w-100 product-overlay">
+                                    <a href="course.html" class="btn btn-outline-dark">View Details</a>
+                                </div>
+                            </div>
+                            <!-- Title Below Image -->
+                            <div class="product-title-below">
+                                <h5>Cabin Crew Training Cabin Crew Training</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Item End -->
+
+
+
+
+                </div>
+            </div>
+            <!-- Shop Product End -->
+
+            <!-- Custom CSS -->
+            <style>
+                /* General Product Item Styling */
+                .product-item {
+                    transition: transform 0.3s ease-in-out;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+                    transform-origin: center;
+                    margin-top: 10px;
+                    background: #fff;
+                }
+
+                .product-item:hover {
+                    transform: scale(1.05);
+                }
+
+                /* Image Container with Gradient Overlay */
+                .product-img {
+                    position: relative;
+                    overflow: hidden;
+                    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+                }
+
+                .product-img img {
+                    display: block;
+                    transition: transform 0.3s ease-in-out;
+                }
+
+                .product-item:hover .product-img img {
+                    transform: scale(1.1);
+                }
+
+                /* Title Below Image */
+                .product-title-below {
+                    text-align: center;
+                    padding: 10px 0;
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: #333;
+                }
+
+                /* Static Blinking Button (Text Blinks Only) */
+                .blinking-button {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    background-color: green;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+
+                .blinking-text {
+                    animation: blink-slow 2s infinite;
+                }
+
+                @keyframes blink-slow {
+
+                    0%,
+                    100% {
+                        opacity: 1;
+                    }
+
+                    50% {
+                        opacity: 0;
+                    }
+                }
+
+                /* Hover Overlay with View Details */
+                .product-overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    background: rgba(0, 0, 0, 0.6);
+                    opacity: 0;
+                    transition: opacity 0.3s ease-in-out;
+                }
+
+                .product-item:hover .product-overlay {
+                    opacity: 1;
+                }
+
+                .product-overlay a {
+                    color: #ffffff;
+                    font-weight: bold;
+                    border: 2px solid #ffffff;
+                    transition: all 0.3s ease-in-out;
+                    text-decoration: none;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                .product-overlay a:hover {
+                    background-color: #ffffff;
+                    color: #000000;
+                }
+            </style>
+
+
+
+
+
+            <!-- Shop Product Start 
+            <div class="col-lg-9 col-md-8">
+                <div class="row pb-3">
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <div class="product-img position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/product-1.jpg" alt="">
+                                <div class="product-action">
+
+                                </div>
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                                <div class="d-flex align-items-center justify-content-center mt-2">
+                                    <h5>$123.00</h5>
+                                    <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center mb-1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <div class="product-img position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/product-2.jpg" alt="">
+                                <div class="product-action">
+
+                                </div>
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                                <div class="d-flex align-items-center justify-content-center mt-2">
+                                    <h5>$123.00</h5>
+                                    <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center mb-1">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <div class="product-img position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/product-3.jpg" alt="">
+                                <div class="product-action">
+
+                                </div>
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                                <div class="d-flex align-items-center justify-content-center mt-2">
+                                    <h5>$123.00</h5>
+                                    <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center mb-1">
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <div class="product-img position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/product-4.jpg" alt="">
+                                <div class="product-action">
+
+                                </div>
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                                <div class="d-flex align-items-center justify-content-center mt-2">
+                                    <h5>$123.00</h5>
+                                    <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center mb-1">
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <div class="product-img position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/product-5.jpg" alt="">
+                                <div class="product-action">
+
+                                </div>
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                                <div class="d-flex align-items-center justify-content-center mt-2">
+                                    <h5>$123.00</h5>
+                                    <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center mb-1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+                        <div class="product-item bg-light mb-4">
+                            <div class="product-img position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/product-9.jpg" alt="">
+                                <div class="product-action">
+
+                                </div>
+                            </div>
+                            <div class="text-center py-4">
+                                <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                                <div class="d-flex align-items-center justify-content-center mt-2">
+                                    <h5>$123.00</h5>
+                                    <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center mb-1">
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+             Shop Product End -->
+        </div>
+    </div>
+    <!-- Shop End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s"
+        style="background: url('img/carousel-3.jpg') no-repeat center center; background-size: cover;">
+        <div class="container py-5 border-start-0 border-end-0"
+            style="border: 1px solid; border-color: rgb(255, 255, 255, 0.08);">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                    <div class="footer-item">
+                        <a href="index.html" class="p-0">
+
+
+                            <h4 class="text-white mb-4">Our Goal</h4>
+
+                            <p class="mb-4 text-white">Our ultimate goal for each graduate is to primarily guide you to
+                                THINK safely before you HANDLE safety.
+                                In this way, you will never be alone, even when you are faced with time-critical
+                                situations.
+                            </p>
+
+                            <div class="d-flex">
+
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-2">
+                <div class="footer-item">
+                    <h4 class="text-white mb-4">Quick Links </h4>
+                    <a class="text-white" href="#"><i class="fas fa-angle-right me-2"></i> Aviation</a>
+                    <a class="text-white" href="#"><i class="fas fa-angle-right me-2"></i> Maritime</a>
+                    <a class="text-white" href="#"><i class="fas fa-angle-right me-2"></i> Land Transport</a>
+                    <a class="text-white" href="#"><i class="fas fa-angle-right me-2"></i> Armed Forces</a>
+                    <a class="text-white" href="#"><i class="fas fa-angle-right me-2"></i> Industry</a>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item">
+                    <h4 class="text-white mb-4">Contact Info</h4>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                        <p class="text-white mb-0">Palini 26 176 79</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-envelope text-primary me-3"></i>
+                        <p class="text-white mb-0">info@amsi.gr</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="fa fa-phone-alt text-primary me-3"></i>
+                        <p class="text-white mb-0">+30 6944 180 345</p>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fab fa-firefox-browser text-primary me-3"></i>
+                        <p class="text-white mb-0">www.amsi.com</p>
+                    </div>
+                    <div class="d-flex">
+                        <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i
+                                class="fab fa-facebook-f text-white"></i></a>
+                        <a class="btn btn-primary btn-sm-square rounded-circle me-3"
+                            href="https://twitter.com/amsi_safety"><i class="fab fa-twitter text-white"></i></a>
+                        <a class="btn btn-primary btn-sm-square rounded-circle me-3"
+                            href="https://www.instagram.com/amsi_safety/?hl=en"><i
+                                class="fab fa-instagram text-white"></i></a>
+                        <a class="btn btn-primary btn-sm-square rounded-circle me-0" href="#"><i
+                                class="fab fa-linkedin-in text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Footer End -->
+
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

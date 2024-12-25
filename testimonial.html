@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup Navigation Menu</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* General styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #234383; /* Blue background */
+      color: #ffffff;
+    }
+
+    /* Styling for each navigation link */
+    .nav-link {
+      display: inline-block;
+      margin: 10px;
+      text-align: center;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      color: #234383;
+      text-decoration: none;
+      width: 200px; /* Fixed width for each card */
+      padding: 10px;
+      flex: 0 0 auto; /* Prevent shrinking or growing */
+    }
+
+    /* Fixed size for all images */
+    .nav-link img {
+      width: 180px; /* Fixed width */
+      height: 120px; /* Fixed height */
+      object-fit: cover; /* Maintain aspect ratio and fill */
+      border-radius: 8px;
+      transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+    }
+
+    /* Hover effect for images */
+    .nav-link:hover img {
+      transform: scale(1.1); /* Slight zoom-in on hover */
+    }
+
+    /* Text below images */
+    .nav-link span {
+      display: block;
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Button to open the modal -->
+  <div class="text-center mt-5">
+    <button type="button" class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#popupMenu">
+      Open Menu
+    </button>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="popupMenu" tabindex="-1" aria-labelledby="popupMenuLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="popupMenuLabel">Navigation Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row d-flex justify-content-center g-3" style="gap: 30px;">
+            <!-- Airspace Control -->
+            <a class="nav-link text-center" href="https://training.groupedci.com/en/training-category/airspace-control_en/">
+              <img src="https://training.groupedci.com/content/uploads/sites/2/2023/06/AirspaceControl-300x139.jpeg" alt="Airspace Control">
+              <span>Airspace Control</span>
+            </a>
+            <!-- Electronic Warfare -->
+            <a class="nav-link text-center" href="https://training.groupedci.com/en/training-category/electronic-warfare_en/">
+              <img src="https://training.groupedci.com/content/uploads/sites/2/2023/06/GuerreElectronique-scaled-e1686124962572-300x167.jpeg" alt="Electronic Warfare">
+              <span>Electronic Warfare</span>
+            </a>
+            <!-- Aviation Safety -->
+            <a class="nav-link text-center" href="https://training.groupedci.com/en/training-category/aviation-safety_en/">
+              <img src="https://training.groupedci.com/content/uploads/sites/2/2023/06/AviationSafety2-300x200.jpg" alt="Aviation Safety">
+              <span>Aviation Safety</span>
+            </a>
+            <!-- UAV -->
+            <a class="nav-link text-center" href="https://training.groupedci.com/en/training-category/uav_en/">
+              <img src="https://training.groupedci.com/content/uploads/sites/2/2023/08/Drones_en_vol-11172-1-300x200.jpg" alt="UAV">
+              <span>UAV</span>
+            </a>
+            <!-- Defense Acquisition -->
+            <a class="nav-link text-center" href="https://training.groupedci.com/en/training-category/defense-acquisition_en/">
+              <img src="https://training.groupedci.com/content/uploads/sites/2/2023/09/DAMI-2-1-300x199.jpg" alt="Defense Acquisition">
+              <span>Defense Acquisition</span>
+            </a>
+            <!-- Distance Training -->
+            <a class="nav-link text-center" href="https://training.groupedci.com/en/training-category/distance-training/">
+              <img src="https://training.groupedci.com/content/uploads/sites/2/2023/09/AdobeStock_465164162-1-300x200.jpeg" alt="Distance Training">
+              <span>Distance Training</span>
+            </a>
+
+
+
+
+
+
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<div class="col-lg-9 col-md-8">
+  <div class="row pb-3">
+
+      <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+          <div class="product-item bg-light mb-4">
+              <div class="product-img position-relative overflow-hidden">
+                  <img class="img-fluid w-100" src="img/product-1.jpg" alt="">
+                  <div class="product-action">
+
+                  </div>
+              </div>
+              <div class="text-center py-4">
+                  <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                  <div class="d-flex align-items-center justify-content-center mt-2">
+                      <h5>$123.00</h5>
+                      <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center mb-1">
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+          <div class="product-item bg-light mb-4">
+              <div class="product-img position-relative overflow-hidden">
+                  <img class="img-fluid w-100" src="img/product-2.jpg" alt="">
+                  <div class="product-action">
+
+                  </div>
+              </div>
+              <div class="text-center py-4">
+                  <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                  <div class="d-flex align-items-center justify-content-center mt-2">
+                      <h5>$123.00</h5>
+                      <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center mb-1">
+
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+          <div class="product-item bg-light mb-4">
+              <div class="product-img position-relative overflow-hidden">
+                  <img class="img-fluid w-100" src="img/product-3.jpg" alt="">
+                  <div class="product-action">
+
+                  </div>
+              </div>
+              <div class="text-center py-4">
+                  <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                  <div class="d-flex align-items-center justify-content-center mt-2">
+                      <h5>$123.00</h5>
+                      <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center mb-1">
+
+
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+          <div class="product-item bg-light mb-4">
+              <div class="product-img position-relative overflow-hidden">
+                  <img class="img-fluid w-100" src="img/product-4.jpg" alt="">
+                  <div class="product-action">
+
+                  </div>
+              </div>
+              <div class="text-center py-4">
+                  <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                  <div class="d-flex align-items-center justify-content-center mt-2">
+                      <h5>$123.00</h5>
+                      <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center mb-1">
+
+
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+          <div class="product-item bg-light mb-4">
+              <div class="product-img position-relative overflow-hidden">
+                  <img class="img-fluid w-100" src="img/product-5.jpg" alt="">
+                  <div class="product-action">
+
+                  </div>
+              </div>
+              <div class="text-center py-4">
+                  <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                  <div class="d-flex align-items-center justify-content-center mt-2">
+                      <h5>$123.00</h5>
+                      <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center mb-1">
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+          <div class="product-item bg-light mb-4">
+              <div class="product-img position-relative overflow-hidden">
+                  <img class="img-fluid w-100" src="img/amsiabout.png" alt="">
+                  <div class="product-action">
+
+                  </div>
+              </div>
+              <div class="text-center py-4">
+                  <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                  <div class="d-flex align-items-center justify-content-center mt-2">
+                      <h5>$123.00</h5>
+                      <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center mb-1">
+
+
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+</div>
+<!--           Shop Product End 
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Shop Product Start -->
+<div class="col-lg-9 col-md-8">
+  <div class="row pb-3">
+      <!-- Product Item Start -->
+      <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+          <div class="product-item bg-light mb-4">
+              <div class="product-img position-relative overflow-hidden">
+                  <img class="img-fluid w-100" src="img/amsiabout.png" alt="">
+                  <div class="product-action">
+                      <!-- Add some hover action here -->
+                      <div class="d-flex justify-content-center align-items-center h-100 w-100 product-overlay">
+                          <a href="#" class="btn btn-outline-dark">View Details</a>
+                      </div>
+                  </div>
+              </div>
+             
+          </div>
+      </div>
+      <!-- Product Item End -->
+
+
+<!-- Product Item Start -->
+<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+  <div class="product-item bg-light mb-4">
+      <div class="product-img position-relative overflow-hidden">
+          <img class="img-fluid w-100" src="img/amsiabout.png" alt="">
+          <div class="product-action">
+              <!-- Add some hover action here -->
+              <div class="d-flex justify-content-center align-items-center h-100 w-100 product-overlay">
+                  <a href="#" class="btn btn-outline-dark">View Details</a>
+              </div>
+          </div>
+      </div>
+     
+  </div>
+</div>
+<!-- Product Item End -->
+
+
+
+<!-- Product Item Start -->
+<div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+  <div class="product-item bg-light mb-4">
+      <div class="product-img position-relative overflow-hidden">
+          <img class="img-fluid w-100" src="img/amsiabout.png" alt="">
+          <div class="product-action">
+              <!-- Add some hover action here -->
+              <div class="d-flex justify-content-center align-items-center h-100 w-100 product-overlay">
+                  <a href="#" class="btn btn-outline-dark">View Details</a>
+              </div>
+          </div>
+      </div>
+     
+  </div>
+</div>
+<!-- Product Item End -->
+
+
+
+      <!-- Repeat for additional products -->
+  </div>
+</div>
+<!-- Shop Product End -->
