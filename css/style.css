@@ -570,9 +570,11 @@ Our Valued Collaborations  */
 /*** Offer Start ***/
 .offer-section .nav a.accordion-link {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 100px;
     display: flex;
-    background: var(--bs-white);
+    background: rgba(red, green, rgb(14, 14, 134), alpha);
+
+    
     transition: 0.5s;
 }
 
